@@ -1,2 +1,2 @@
 # Search-Academy
- TCC desenvolvido no cursos CTMA
+ TCC desenvolvido no curso CTMA
