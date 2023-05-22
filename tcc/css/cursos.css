@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+     background-color: rgb(26, 152, 202);
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Gloock', serif;
+    font-size: 25px;
+    padding: 5px;
+  }  .logo{
+    display: flex;
+    align-items: center; 
+   font-family: 'Gloock', serif;
+   font-size: 30px;
+   
+  }
+  
+
+  
+  nav {
+    padding: 3vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Gloock', serif;
+    background: #424243;
+    border-bottom: #fff solid 3px ;
+  }
+  
+  main {
+    
+    background-size: cover;
+    height: 92vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    font-family: 'Gloock', serif;
+  }
+ 
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  
+.seta{
+  display: flex;
+  flex-direction: row;
+  
+}
+.seta h1{
+  display: flex;
+  align-items: center;
+  font-family: 'Gloock', serif;
+  font-size: 30px;
+}
+.nav-list :hover{
+  transform: translateX(-10px);
+  transition: 0.5s;
+}
+.cursos{
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  
+}
+.cursos h1{
+  font-size: 25px;
+  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+.formulario {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  gap: 15px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  background-color: #424243;
+  width: 1500px;
+  margin: 25px;
+  padding: 15px;
+  
+}
+.formulario span{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom: 3px solid white;
+  font-size: 45px;
+}
+.formulario a{
+  font-size: 30px;
+  text-decoration: underline;
+}
+.formulario a:hover{
+  opacity: 0.5;
+  transition: 1s;
+}
+/*voltar*/
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 25px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-family: 'Glock',serif;
+}
+
+.cta svg {
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  transform: scale(-1);
+}
+
+.cta:hover svg {
+  transform: translateX(1);
+}
+
+.cta:active svg {
+  transform: scale(1);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

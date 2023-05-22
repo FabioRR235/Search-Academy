@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+     background-color: rgb(26, 152, 202);
+  }
+  main {
+    
+    background-size: cover;
+    height: 92vh;
+  }
+  
+  a {
+    color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Gloock', serif;
+  font-size: 25px;
+  padding: 5px;
+  }
+  .nav-link:hover{
+    color: rgb(26, 152 , 202 /100%);
+  
+  }
+  .dropdown-item{
+    color: white;
+  }
+  .dropdown-item:hover{
+    background-color: #424243;
+    text-decoration: underline;
+    color: rgb(26, 152 , 202 );
+    transition: 0.5s;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 100%);
+  }
+  .navbar{
+    border-bottom: solid 5px #fff;
+  }
+/*corpo*/
+.titulo{
+  display: flex;
+  justify-content: center;
+  font-size: 10vh;
+  padding-bottom: 8vh;
+  font-family: 'Glock',serif;
+}
+  .text{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+   
+    margin: 150px;
+    }
+    .texto{
+      font-size: 27px;
+      text-align: justify;
+    }
+.line{
+  size: 25px;
+}
+
+/*Slideshow*/
+.content{
+  width: 700px;
+  height: 450px;
+  border: solid 5px #424243;
+  border-radius:20px ;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 15%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar{
+  width: 25px;
+  height: 25px;
+  border: 2px solid #424243;
+  margin: 6px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.bar:hover{
+  background-color: #545454;
+  transition: 0.6s;
+}
+input{display: none;}
+
+.slides{
+  display: flex;
+  width: 405%;
+  height: 100%;
+}
+.slide{
+  width: 25%;
+  transition: .6s;
+
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+#slide1:checked ~ .s1{
+  margin-left: 0;
+
+}
+#slide2:checked ~ .s1{
+  margin-left: -25%;
+
+}
+#slide3:checked ~ .s1{
+  margin-left: -50%;
+
+}
+
+#slide4:checked ~ .s1{
+  margin-left: -75%;
+
+}

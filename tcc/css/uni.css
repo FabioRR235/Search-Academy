@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+     background-color: rgb(26, 152, 202);
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Gloock', serif;
+    font-size: 25px;
+    padding: 5px;
+  }
+  main {
+    
+    background-size: cover;
+    height: 92vh;
+  }
+  .nav-link:hover{
+    color: rgb(26, 152 , 202 /100%);
+  
+  }
+  .dropdown-item{
+    color: white;
+  }
+  .dropdown-item:hover{
+    background-color: #424243;
+    text-decoration: underline;
+    color: rgb(26, 152 , 202 );
+    transition: 0.5s;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 100%);
+  }
+  .navbar{
+    border-bottom: solid 5px #fff;
+  }
+  /*Barra de pesquisa*/
+
+input[type="text"] {
+  width: 300px;
+  height: 60px;
+  margin-left: 150px;
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px;
+  background-color: #424243;
+  border: 3px solid white;
+  border-radius: 5px;
+  font-size: 35px;
+  display: flex;
+  
+}
+input[type="text"]:focus{
+  width: 600px;
+  transition: 0.5s;
+}
+
+
+li:last-child {
+  border-bottom: none;
+}
+li.hidden {
+ display: none;
+  
+   
+}
+
+
+ 
+  /*listas*/
+  .faculdades{
+    display: flex;
+    padding-top: 250px;
+    justify-content: center;
+  }
+  #cursos{
+    list-style: none;
+    color: #ffffff;
+    font-family: 'Gloock', serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right:10px ;
+    padding-left: 10px;
+    
+  
+  }
+  #cursos a:hover{
+    color: #fff;
+  }
+  #cursos img{
+    border:  5px solid #424243;
+    border-radius: 10%;
+  }
+  #cursos li{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    align-items: baseline;
+  }
+  
+  #btn-cursos{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  
+  }
+  #btn-cursos a{
+    color: #ffffff;
+    border: 5px solid #d8d8d8;
+    border-radius: 5px;
+  }
+  #cursos h1{
+    font-size: 25px;
+    font-weight: 50;
+    font-family: 'Gloock', serif;
+    color: #fff;
+
+  }
+  #cursos li:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+    text-decoration: underline;
+  }
+  /*Voltar pra cima*/
+.btn-back{
+display: flex;
+justify-content: end;
+padding: 35px;
+scroll-behavior: smooth;
+}
+.voltar{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 800px;
+  border-radius: 50%;
+}
+.voltar a{
+  transition: 250ms all ease;
+}
+
+/*rodape*/
+.footer{
+  padding-block: 50px;
+  padding-bottom: 25px;
+  background-color: #424243;
+  color: #666873;
+  border-top: solid 5px #fff;
+}
+.footer_container{
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 15px;
+}
+.footer_top{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  row-gap: 20px;
+}
+.footer_title{
+  font-size: 25px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.footer_list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.footer_list-link{
+  transition: color 0.25s;
+  color: #666873;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+}
+.footer_list-link:hover{
+  color: #fff;
+}
+.footer_divider{
+  margin-block: 25px;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.footer_bottom{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer_list--botom{
+  flex-direction: row;
+}
+span.copyright{
+  font-size: 25px;
+}

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(26, 152, 202);
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Gloock', serif;
+    font-size: 25px;
+    padding: 5px;
+  }
+  main {
+    background-size: cover;
+    height: 92vh;
+  }
+  
+  .nav-link:hover{
+    color: rgb(26, 152 , 202 /100%);
+  
+  }
+  .dropdown-item{
+    color: white;
+  }
+  .dropdown-item:hover{
+    background-color: #424243;
+    text-decoration: underline;
+    color: rgb(26, 152 , 202 );
+    transition: 0.5s;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 100%);
+  }
+  .navbar{
+    border-bottom: solid 5px #fff;
+  }
+  /*Formulario*/
+
+.box{
+    color: white;
+    background-color: #424243;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    width: 40%;
+    margin-top: 30%;
+    
+}
+fieldset{
+    border: 5px solid #424243;
+    border-radius: 5px;
+}
+legend{
+    border: 5px solid #424243;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #424243;
+    border-radius: 3px;
+    text-decoration: underline;
+}
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background-color: #424243;
+    border: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+.inputUser-s{
+    background-color: #424243;
+    border: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+
+    letter-spacing: 2px;
+    padding: 25px;
+    resize: none;
+}
+.labelInput{
+    position: absolute;
+    color: #424243;
+    padding: 5px;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus{
+  border-color: rgb(26, 152 , 202 )
+}
+.inputUser-s:focus{ 
+  border-color: rgb(26, 152 , 202 )
+}
+
+button {
+  --primary-color: #424243;
+  --secondary-color: #fff;
+  --hover-color: rgb(26,152,202);
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border:1px solid;
+  border-radius: 5px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+

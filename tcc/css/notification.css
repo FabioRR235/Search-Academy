@@ -1,0 +1,48 @@
+
+.notification{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 250px;
+    height: 100px;
+    padding: 20px 15px;
+    border-radius: 4px;
+    background-color: #424243;
+    color: #f6f5f9;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: fade-in 5s linear forwards;
+}
+.notification p{
+    font-size: 30px;
+}
+.notification_progress{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: calc(100% - 10px);
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-image: linear-gradient(to right,#7ac8e4,rgb(26,152,202));
+    border-radius: inherit;
+    animation: load 4s 0.25s linear forwards;
+}
+@keyframes fade-in{
+    5%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    90%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes load{
+    to{
+        transform: scaleX(1);
+    }
+}
