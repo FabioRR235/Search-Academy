@@ -49,7 +49,7 @@ if(!empty($_POST['nome']) && ($_POST['email']) && ($_POST['sugestao']))
       <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #424243;">
         
     <img src="img/logo.png" width="80" height="80" class="d-inline-block align-top" alt="">
-  <a class="navbar-brand" href="index.php" style="font-size: 25px;">Search Academy</a>
+  <a class="navbar-brand" href="index.html" style="font-size: 25px;">Search Academy</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -57,7 +57,7 @@ if(!empty($_POST['nome']) && ($_POST['email']) && ($_POST['sugestao']))
   <div class="collapse navbar-collapse " id="conteudoNavbarSuportado" >
     <ul class="navbar-nav mr-auto" >
       <li class="nav-item">
-        <a class="nav-link" href="index.php" style="font-size: 25px;">Inicio </a>
+        <a class="nav-link" href="index.html" style="font-size: 25px;">Inicio </a>
       </li>
       
       <li class="nav-item dropdown">
